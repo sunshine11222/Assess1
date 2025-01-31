@@ -1,0 +1,92 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fa6f06;
+    }
+ 
+    form {
+      width: 50%;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+ 
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #1c1b1b;
+    }
+ 
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+ 
+    input[type="radio"] {
+      margin: 0 10px;
+    }
+ 
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+ 
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+ 
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+ 
+  <h1 style="color: #2c3e50;">Student Registration Form</h1>
+ 
+  <form>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName"><br><br>
+ 
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br><br>
+ 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+ 
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="date" id="dateOfBirth" name="dateOfBirth"><br><br>
+ 
+    <label for="username">Set Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+ 
+    <label for="password">Set Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+ 
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male"> Male
+    <input type="radio" id="female" name="gender" value="female"> Female
+    <input type="radio" id="others" name="gender" value="others"> Others<br><br>
+ 
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+        <option value="">BSCS</option>
+        <option value="">BSIT</option>
+        <option value="">BLIS</option>
+        <option value="">BSIS</option>
+        <option value="">BSCRIM</option>
+      <option value="">Select a course</option>
+    </select><br><br>
+ 
+    <input type="submit" value="Register">
+  </form>
+
